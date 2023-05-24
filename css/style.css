@@ -67,6 +67,7 @@ body{
 .header{
     border-bottom: 1px solid #E7E9FC;
     padding: 24px 0;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .menu-nav{
     display: flex;
@@ -120,9 +121,11 @@ body{
         color: var(--hover);
 }
 .hero{
+    max-width: 1440px;
     background-color: var(--dark-grey);
     background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/people-office.jpg);
 background-repeat: no-repeat;
+background-position: center;
 background-size: cover;
     padding: 188px 0;
 
@@ -168,15 +171,19 @@ display: block;
     min-width:264px;
 }
 .advatages_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
 padding: 24px 100px;
 background-color: var(--bg-grey);
 border-radius: 4px;
 margin-bottom: 8px;
 }
-.advatages_image-svg{
+/* .advatages_image-svg{
 width: 64px;
 height: 64px;
-}
+} */
 .advatages_subtitle{
     margin-bottom: 8px;
 }
