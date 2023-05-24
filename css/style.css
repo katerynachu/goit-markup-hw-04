@@ -6,6 +6,7 @@
     --bg-grey:#F4F4FD;
     --white:#FFFFFF;
     --black:#000000;
+    --green:#31D0AA;
     --hover:#404BBF;
     --border:#E7E9FC;
     --custom-border:#8E8F99;
@@ -250,7 +251,13 @@ letter-spacing: 0.02em;
     border-radius: 50%;
     background-color: var(--blue);
 }
+.team_social-link:hover{
+    background-color:var(--hover) ;
+}
+
+
 .team_social-icon{
+    fill: var(--white);
     width: 16px;
     height: 16px;
 }
@@ -266,12 +273,21 @@ letter-spacing: 0.02em;
     align-items: center;
 }
 .customers_logo-item{
-    /* width: 168px;
-    height: 88px; */
     padding: 16px 32px;
     background: var(--white);
     border: 1px solid  var(--custom-border);
     border-radius: 4px;
+}
+.customers_logo-item:hover,
+.customers_logo-item:focus{
+    border: 1px solid var(--hover);
+}
+.customers_logo-svg{
+    fill:var(--custom-border)
+}
+.customers_logo-item:hover .customers_logo-svg,
+.customers_logo-item:focus .customers_logo-svg{
+    fill: var(--hover);
 }
 .customers_logo-svg{
     width: 104px;
@@ -305,7 +321,11 @@ letter-spacing: 0.02em;
     display: flex;
     gap: 16px;
 }
+.footer_social-link:hover{
+    background-color:var(--green) ;
+}
 .footer_social-icon{
+    fill: var(--white);
     width: 24px;
     height: 24px;
 }
