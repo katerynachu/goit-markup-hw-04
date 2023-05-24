@@ -306,7 +306,7 @@ height: 100%;
     border-color:var(--hover);
 }
 .customers_logo-svg{
-    fill:var(--custom-border)
+    fill:currentColor;
 }
 .customers_link:hover .customers_logo-svg,
 .customers_link:focus .customers_logo-svg{
