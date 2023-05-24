@@ -262,13 +262,15 @@ height: 100%;
     border-radius: 50%;
     background-color: var(--blue);
 }
-.team_social-link:hover{
+.team_social-link:hover,
+.team_social-link:focus
+{
     background-color:var(--hover) ;
 }
 
 
 .team_social-icon{
-    fill: var(--white);
+    fill: var(--bg-grey);
     width: 16px;
     height: 16px;
 }
@@ -304,14 +306,12 @@ height: 100%;
 .customers_link:hover,
 .customers_link:focus{
     border-color:var(--hover);
+        color: var(--hover);
 }
 .customers_logo-svg{
     fill:currentColor;
 }
-.customers_link:hover .customers_logo-svg,
-.customers_link:focus .customers_logo-svg{
-    color: var(--hover);
-}
+
 /* .customers_logo-svg{
     width: 104px;
     height: 56px;
@@ -360,11 +360,13 @@ height: 40px;
     width: 100%;
     height: 100%;
 }
-.footer_social-link:hover{
+.footer_social-link:hover,
+.footer_social-link:focus
+{
     background-color:var(--green) ;
 }
 .footer_social-icon{
-    fill: var(--white);
+    fill: var(--bg-grey);
     /* width: 24px;
     height: 24px; */
 }
@@ -416,7 +418,9 @@ column-gap: 24px;
 .projects-link{
     display: block;
 }
-.projects_item:hover {
+.projects_item:hover .projects-link,
+.projects_item:focus .projects-link
+{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .projects_title{
