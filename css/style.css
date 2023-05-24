@@ -5,8 +5,10 @@
     --blue:#4D5AE5;
     --bg-grey:#F4F4FD;
     --white:#FFFFFF;
+    --black:#000000;
     --hover:#404BBF;
     --border:#E7E9FC;
+    --custom-border:#8E8F99;
 
     /* FONT-FAMILY */
     --roboto:'Roboto', sans-serif;
@@ -118,6 +120,9 @@ body{
 }
 .hero{
     background-color: var(--dark-grey);
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/people-office.jpg);
+background-repeat: no-repeat;
+background-size: cover;
     padding: 188px 0;
 
 }
@@ -160,6 +165,16 @@ display: block;
 }
 .advatages_item{
     min-width:264px;
+}
+.advatages_image{
+padding: 24px 100px;
+background-color: var(--bg-grey);
+border-radius: 4px;
+margin-bottom: 8px;
+}
+.advatages_image-svg{
+width: 64px;
+height: 64px;
 }
 .advatages_subtitle{
     margin-bottom: 8px;
@@ -214,10 +229,53 @@ letter-spacing: 0.02em;
 }
 .team_role{
     text-align: center;
+    margin-bottom: 8px;
 }
 .team_name{
     text-align: center;
     margin-bottom: 8px;
+}
+.team_social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.social-link{
+       width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    border-radius: 50%;
+    background-color: var(--blue);
+}
+.team_social-icon{
+    width: 16px;
+    height: 16px;
+}
+.customers{
+    padding: 120px 0;
+}
+.customers_title{
+    margin-bottom: 72px;
+}
+.customers_logo{
+    display: flex;
+    gap:24px;
+    align-items: center;
+}
+.customers_logo-item{
+    /* width: 168px;
+    height: 88px; */
+    padding: 16px 32px;
+    background: var(--white);
+    border: 1px solid  var(--custom-border);
+    border-radius: 4px;
+}
+.customers_logo-svg{
+    width: 104px;
+    height: 56px;
 }
 .footer{
     background-color: var(--dark-grey);
@@ -233,6 +291,23 @@ letter-spacing: 0.02em;
 .footer_description{
     color: var(--bg-grey);
     max-width: 264px;
+}
+.footer_social-media{
+        margin-left: 120px;
+}
+.footer_social-media-title{
+    color: var(--white);
+    letter-spacing: 0.02em;
+    line-height: 1.5em;
+    margin-bottom: 16px;
+}
+.footer_social{
+    display: flex;
+    gap: 16px;
+}
+.footer_social-icon{
+    width: 24px;
+    height: 24px;
 }
 
 /* PORTFOLIO */
@@ -278,7 +353,9 @@ column-gap: 24px;
 .projects_item{
     background-color: var(--white);
     width: calc((100% - 48px) / 3);
-
+}
+.projects_item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .projects_title{
     color: var(--dark-grey);
